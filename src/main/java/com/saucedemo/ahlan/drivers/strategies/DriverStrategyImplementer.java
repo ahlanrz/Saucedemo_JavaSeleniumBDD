@@ -1,6 +1,6 @@
 package com.saucedemo.ahlan.drivers.strategies;
 
-import com.peluangkerjaku.ahlan.utils.Constants;
+import com.saucedemo.ahlan.utils.Constants;
 
 public class DriverStrategyImplementer {
     public static DriverStrategy chooseStrategy(String strategy) {

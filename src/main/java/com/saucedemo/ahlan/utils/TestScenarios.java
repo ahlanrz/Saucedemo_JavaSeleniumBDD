@@ -2,13 +2,8 @@ package com.saucedemo.ahlan.utils;
 
 public enum TestScenarios {
 
-    /*
-        AHLAN REZKI
-     */
-    //Modul Login Invalid Klik Sign In
 
-
-    AR01("TCC.PTP.007 User Approve Data");
+    AR01("User valid login");
 
     private String testName;
 

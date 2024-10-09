@@ -6,16 +6,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Login {
+public class LoginValid {
     private WebDriver driver;
 
-    public Login() {
+    public LoginValid() {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"tl_login-1-51550_text\"]")
+    @FindBy(name = "user-name")
     WebElement username;
+
+    @FindBy(name = "password")
+    WebElement password;
+
+    @FindBy(xpath = "//input[@id='login-button']")
+    WebElement btnLogin;
+
+    @FindBy(xpath = "//span[@class='title']")
+    WebElement txtProducts;
 
 
 
@@ -28,19 +37,19 @@ public class Login {
         btnLogin.click();
     }
 
-    public String getTxtWelcome(){
-        return txtWelcome.getText();
+    public String getTxtProducts(){
+        return txtProducts.getText();
     }
 
-    public String getTxtInvalidCredentials(){
-        return txtInvalidCredentials.getText();
-    }
+//    public String getTxtInvalidCredentials(){
+//        return txtInvalidCredentials.getText();
+//    }
 //    public String getTxtRequired(){
 //        return txtRequired.getText();
 //    }
 
-    public void clickBtnOkeInvalid() {
-        btnOkeInvalid.click();
-    }
+//    public void clickBtnOkeInvalid() {
+//        btnOkeInvalid.click();
+//    }
 
 }

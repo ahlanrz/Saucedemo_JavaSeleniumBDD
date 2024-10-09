@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.*;
 
+
 public class Utils {
     private static Robot robot;
     private static JavascriptExecutor js;
