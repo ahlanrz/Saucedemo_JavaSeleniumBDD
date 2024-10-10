@@ -2,7 +2,7 @@ package com.saucedemo.ahlan;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.saucedemo.ahlan.pages.LoginValid;
+import com.saucedemo.ahlan.pages.LoginPage;
 import com.saucedemo.ahlan.utils.Constants;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -14,7 +14,7 @@ public class TestLogin {
 
     private static WebDriver driver;
     private static ExtentTest extentTest;
-    private LoginValid loginPage = new LoginValid();
+    private LoginPage loginPage = new LoginPage();
 
     public TestLogin() {
         driver = Hooks.driver;
